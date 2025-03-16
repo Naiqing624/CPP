@@ -6,7 +6,7 @@
 /*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 12:55:26 by nacao             #+#    #+#             */
-/*   Updated: 2025/03/11 19:33:33 by naiqing          ###   ########.fr       */
+/*   Updated: 2025/03/16 19:45:42 by naiqing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,27 @@
 # define CONTACT_HPP
 
 #include <iostream>
+#include <cstdlib>
 
 class Contact
 {
 private:
-	std::string name;
-	std::string numero;
+	static std::string fieldName[5];
+	std::string info[11];
+
+	enum	Field {
+		FristName = 0,
+		LastName,
+		NickName,
+		PhoneNumber,
+		DarkestSecret
+	};
 	
 public:
-	void setContact();
-	void display();
+	Contact();
+	~Contact();
+	bool	setContact();
+	void	display() const;
 };
 
 

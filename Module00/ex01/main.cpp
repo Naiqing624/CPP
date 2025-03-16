@@ -3,39 +3,47 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
+/*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 19:35:05 by naiqing           #+#    #+#             */
-/*   Updated: 2025/03/13 14:48:12 by nacao            ###   ########.fr       */
+/*   Updated: 2025/03/16 19:44:51 by naiqing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "contact.hpp"
 #include "phoneBook.hpp"
 
+void	show_instruction()
+{
+	std::cout << "Please entre your command [ADD, SEARCH, EXIT] : " << std::endl;
+}
+
 int	main(void)
 {
-	Contact person;
-	phoneBook phoneBook;
+	PhoneBook 	phoneBook;
 	std::string	cmd;
+	bool		run = true;
 
-	while(1)
+	show_instruction();
+	while (run && std::getline(std::cin, cmd))
 	{
-		std::cout << "Please entre cmd (ADD, SEARCH, EXIT)" << std::endl;
-		std::cin >> cmd;
-
-		if (cmd == "ADD")
+		if (std::cin.eof())
 		{
-			phoneBook.addContact();
+			std::cout << "You pressed ctrl + D, Exiting now" << std::endl;
+			exit (0);
 		}
+		else if (cmd == "ADD")
+			phoneBook.addContactInfo();
 		else if (cmd == "SEARCH")
-		{
-			phoneBook.displayContact();
-		}
+			phoneBook.getPhonebookInfo();
 		else if (cmd == "EXIT")
 		{
-			std::cout << "..." << std::endl;
+			std::cout << "Good bye" << std::endl;
+			run = false;
+			continue;
 		}
+		cmd.clear();
+		show_instruction();
 	}
 	return (0);
 }

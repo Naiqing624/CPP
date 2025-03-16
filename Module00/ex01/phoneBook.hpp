@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   phoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
+/*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 19:43:04 by nacao             #+#    #+#             */
-/*   Updated: 2025/03/13 14:45:18 by nacao            ###   ########.fr       */
+/*   Updated: 2025/03/16 19:45:46 by naiqing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,26 +15,19 @@
 
 #include "contact.hpp"
 
-class phoneBook
+class PhoneBook
 {
 private:
     Contact contacts[8];
-    int contactCount;
+    int		index;
+	bool	full;
     
 public:
-    phoneBook();
-    ~phoneBook();
-    void    addContact();
-    void    displayContact();
+    PhoneBook();
+    ~PhoneBook();
+    void    addContactInfo();
+    void    getPhonebookInfo() const;
 };
-
-phoneBook::phoneBook(/* args */)
-{
-}
-
-phoneBook::~phoneBook()
-{
-}
 
 
 #endif
