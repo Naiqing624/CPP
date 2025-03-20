@@ -1,25 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/18 13:38:09 by naiqing           #+#    #+#             */
-/*   Updated: 2025/03/20 15:12:31 by naiqing          ###   ########.fr       */
+/*   Created: 2025/03/20 10:05:23 by naiqing           #+#    #+#             */
+/*   Updated: 2025/03/20 14:21:34 by naiqing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
 
-int	main(void)
+#ifndef WEAPON_HPP
+# define WEAPON_HPP
+
+#include <iostream>
+
+class Weapon
 {
-	int	count = 5;
-	Zombie	*p = zombieHorde(count, "Bob");
-	for (int i = 0; i < count; i++)
-	{
-		p[i].announce();
-	}
-	delete[] p;
-	return (0);
-}
+	private:
+		std::string	_type;
+	
+	public:
+		//constructor
+		Weapon(const std::string	&Weapon);
+		//deconstructor
+		~Weapon();
+		//getter only read
+		std::string	getType() const;
+		//setter
+		void	setType(const std::string	&Weapon);
+		//public methode
+};
+
+#endif

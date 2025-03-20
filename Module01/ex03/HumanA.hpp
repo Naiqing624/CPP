@@ -1,25 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanA.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/18 13:38:09 by naiqing           #+#    #+#             */
-/*   Updated: 2025/03/20 15:12:31 by naiqing          ###   ########.fr       */
+/*   Created: 2025/03/20 10:06:00 by naiqing           #+#    #+#             */
+/*   Updated: 2025/03/20 14:30:18 by naiqing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef HUMANA_HPP
+# define HUMANA_HPP
 
-int	main(void)
+# include "Weapon.hpp"
+
+class HumanA
 {
-	int	count = 5;
-	Zombie	*p = zombieHorde(count, "Bob");
-	for (int i = 0; i < count; i++)
-	{
-		p[i].announce();
-	}
-	delete[] p;
-	return (0);
-}
+	private:
+		Weapon	&_Weapon;
+		std::string	_name;
+		
+	public:
+		HumanA(std::string name, Weapon &weapon);
+		~HumanA();
+		void	attack();
+};
+
+
+#endif

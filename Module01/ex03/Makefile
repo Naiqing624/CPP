@@ -5,20 +5,20 @@
 #                                                     +:+ +:+         +:+      #
 #    By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/03/18 11:00:40 by naiqing           #+#    #+#              #
-#    Updated: 2025/03/20 15:13:08 by naiqing          ###   ########.fr        #
+#    Created: 2025/03/20 10:04:56 by naiqing           #+#    #+#              #
+#    Updated: 2025/03/20 15:04:22 by naiqing          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Zombie
+NAME = Weapon
 
 CPP = c++
 CPPFLAG = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp \
-	Zombie.cpp \
-	newZombie.cpp \
-	randomChump.cpp
+SRC = HumanA.cpp \
+	HumanB.cpp \
+	main.cpp \
+	Weapon.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
@@ -35,6 +35,6 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-re: fclean all
+re: clean fclean all
 
 .PHONY: all clean fclean re
