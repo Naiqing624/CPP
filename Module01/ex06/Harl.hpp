@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/24 09:20:57 by naiqing           #+#    #+#             */
-/*   Updated: 2025/03/24 09:29:33 by naiqing          ###   ########.fr       */
+/*   Created: 2025/03/24 11:16:40 by naiqing           #+#    #+#             */
+/*   Updated: 2025/03/24 11:20:29 by naiqing          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include <iostream>
 
-class	Harl
+class Harl
 {
 	private:
 		void	debug(void);
