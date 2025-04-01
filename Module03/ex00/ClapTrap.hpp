@@ -1,32 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/18 13:38:23 by naiqing           #+#    #+#             */
-/*   Updated: 2025/03/28 16:40:48 by marvin           ###   ########.fr       */
+/*   Created: 2025/03/29 20:37:54 by naiqing           #+#    #+#             */
+/*   Updated: 2025/03/29 21:42:49 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-# define ZOMBIE_HPP
+#ifndef CLAPTRAP_HPP
+# define CLAPTRAP_HPP
 
 #include <iostream>
 
-class Zombie
+class ClapTrap
 {
 	private:
-		std::string _name;
-	
-	public:
-		Zombie();
-		~Zombie();
-		void	announce();
-		void	set_name(std::string name1);
-};
+		std::string	_name;
+		int			_hitPoint;
+		int			_energyPoint;
+		int			_attackDamage;
 
-Zombie	*zombieHorde(int n, std::string name);
+	public:
+		ClapTrap(std::string name);
+		ClapTrap(const ClapTrap &other);
+		ClapTrap &operator = (const ClapTrap &other);
+		~ClapTrap();
+		void attack(const std::string& target);
+		void takeDamage(unsigned int amount);
+		void beRepaired(unsigned int amount);
+	
+};
 
 #endif

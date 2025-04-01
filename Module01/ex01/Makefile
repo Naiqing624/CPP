@@ -3,17 +3,17 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+         #
+#    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/18 13:41:03 by naiqing           #+#    #+#              #
-#    Updated: 2025/03/18 15:15:32 by naiqing          ###   ########.fr        #
+#    Updated: 2025/03/28 16:38:45 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = zombie
 
 CPP = c++
-CPPFLAG = -Wall -Wextra -Werror -std=c++98
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRC = main.cpp \
 	Zombie.cpp \
@@ -23,10 +23,10 @@ OBJ = $(SRC:.cpp=.o)
 all : $(NAME)
 
 $(NAME): $(OBJ)
-	$(CPP) $(CPPFLAG) $(OBJ) -o $(NAME)
+	$(CPP) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
 %.o: %.cpp
-	$(CPP) $(CPPFLAG) -c $< -o $@
+	$(CPP) $(CPPFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJ)
