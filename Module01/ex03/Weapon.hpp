@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/20 10:05:23 by naiqing           #+#    #+#             */
-/*   Updated: 2025/03/20 14:21:34 by naiqing          ###   ########.fr       */
+/*   Updated: 2025/03/27 14:10:25 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ class Weapon
 		//getter only read
 		std::string	getType() const;
 		//setter
-		void	setType(const std::string	&Weapon);
+		void	setType(const std::string &Weapon);
 		//public methode
 };
 

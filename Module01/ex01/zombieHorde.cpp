@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   zombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/18 13:38:49 by naiqing           #+#    #+#             */
-/*   Updated: 2025/03/18 15:14:41 by naiqing          ###   ########.fr       */
+/*   Updated: 2025/03/27 14:03:50 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie	*zombieHorde(int n, std::string name)
+Zombie	*zombieHorde(int N, std::string name)
 {
-	Zombie *hordeZombie = new Zombie[n];
-	for (int i = 0; i < n; i++)
+	Zombie *hordeZombie = new Zombie[N];
+	for (int i = 0; i < N; i++)
 	{
 		hordeZombie[i].set_name(name);
 	}

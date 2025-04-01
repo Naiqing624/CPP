@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/18 13:38:23 by naiqing           #+#    #+#             */
-/*   Updated: 2025/03/18 14:43:58 by naiqing          ###   ########.fr       */
+/*   Updated: 2025/03/27 14:04:01 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ class Zombie
 {
 	private:
 		std::string name;
-		int	count;
 	
 	public:
 		Zombie();
@@ -28,6 +27,6 @@ class Zombie
 		void	set_name(std::string name1);
 };
 
-Zombie	*zombieHorde(int n, std::string name);
+Zombie	*zombieHorde(int N, std::string name);
 
 #endif
