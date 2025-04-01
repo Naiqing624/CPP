@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+         #
+#    By: nacao <nacao@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/24 11:16:14 by naiqing           #+#    #+#              #
-#    Updated: 2025/03/24 13:29:09 by naiqing          ###   ########.fr        #
+#    Updated: 2025/03/27 14:49:17 by nacao            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = harlfilter
+NAME = harlFilter
 
 CPP = c++
 CPPFLAG = -Wall -Wextra -Werror -std=c++98

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naiqing <naiqing@student.42.fr>            +#+  +:+       +#+        */
+/*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/18 13:38:09 by naiqing           #+#    #+#             */
-/*   Updated: 2025/03/20 15:12:31 by naiqing          ###   ########.fr       */
+/*   Updated: 2025/03/27 14:06:49 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	main(void)
 {
-	int	count = 5;
+	int	count = 3;
 	Zombie	*p = zombieHorde(count, "Bob");
 	for (int i = 0; i < count; i++)
 	{
