@@ -5,12 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/29 20:38:06 by naiqing           #+#    #+#             */
-/*   Updated: 2025/04/03 15:03:36 by nacao            ###   ########.fr       */
+/*   Created: 2025/04/03 08:56:56 by nacao             #+#    #+#             */
+/*   Updated: 2025/04/03 08:58:20 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
+
+ClapTrap::ClapTrap()
+{
+}
 
 ClapTrap::ClapTrap(std::string name) : _name(name)
 {

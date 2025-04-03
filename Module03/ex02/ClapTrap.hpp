@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/29 20:37:54 by naiqing           #+#    #+#             */
-/*   Updated: 2025/04/03 15:03:40 by nacao            ###   ########.fr       */
+/*   Created: 2025/04/03 08:57:09 by nacao             #+#    #+#             */
+/*   Updated: 2025/04/03 13:32:13 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,14 @@
 
 class ClapTrap
 {
-	private:
+	protected:
 		std::string	_name;
 		int			_hitPoint;
 		int			_energyPoint;
 		int			_attackDamage;
 
 	public:
+		ClapTrap();
 		ClapTrap(std::string name);
 		ClapTrap(const ClapTrap &other);
 		ClapTrap &operator = (const ClapTrap &other);

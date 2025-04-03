@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/30 18:45:07 by marvin            #+#    #+#             */
-/*   Updated: 2025/03/30 18:45:07 by marvin           ###   ########.fr       */
+/*   Created: 2025/04/03 15:04:21 by nacao             #+#    #+#             */
+/*   Updated: 2025/04/03 15:04:21 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ class ClapTrap
 		ClapTrap(const ClapTrap &other);
 		ClapTrap &operator = (const ClapTrap &other);
 		~ClapTrap();
-		virtual void attack(const std::string& target);
+		void attack(const std::string& target);
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
 	

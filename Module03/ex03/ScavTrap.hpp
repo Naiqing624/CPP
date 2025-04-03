@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/03 15:05:45 by nacao             #+#    #+#             */
-/*   Updated: 2025/04/03 15:05:45 by nacao            ###   ########.fr       */
+/*   Created: 2025/04/03 15:00:42 by nacao             #+#    #+#             */
+/*   Updated: 2025/04/03 15:00:42 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "ClapTrap.hpp"
 
-class ScavTrap : public ClapTrap
+class ScavTrap : virtual public ClapTrap
 {
 	public:
 		ScavTrap();
