@@ -21,6 +21,21 @@ Span::~Span()
 {
 }
 
+Span::Span(const Span &other): _max(other._max), _numbers(other._numbers)
+{
+}
+
+Span &Span::operator=(const Span &other)
+{
+	if (this != &other)
+	{
+		this->_max = other._max;
+		this->_numbers = other._numbers;
+	}
+	return *this;
+}
+
+
 void	Span::addNumber(int n)
 {
 	if (_numbers.size() >= this->_max)

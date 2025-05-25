@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Span.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: nacao <nacao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/20 11:21:46 by nacao             #+#    #+#             */
-/*   Updated: 2025/05/21 12:13:14 by marvin           ###   ########.fr       */
+/*   Updated: 2025/05/22 09:36:42 by nacao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ class Span
     public:
         Span(unsigned int num);
         ~Span();
+		Span(const Span &other);
+		Span &operator = (const Span &other);
         void    addNumber(int n);
         int	shortestSpan();
         int	longestSpan();
