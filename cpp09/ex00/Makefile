@@ -4,7 +4,7 @@ CPP = c++
 
 CPPFLAG = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.CPP
+SRC = main.cpp BitcoinExchange.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
@@ -14,7 +14,7 @@ $(NAME):$(OBJ)
 	$(CPP) $(CPPFLAG) $(OBJ) -o $(NAME)
 
 %.o: %.cpp
-	$(CPP) $(CPPFLAG) -c %< -o %@
+	$(CPP) $(CPPFLAG) -c $< -o $@
 
 clean:
 	rm -f $(OBJ)
