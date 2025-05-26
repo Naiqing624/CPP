@@ -57,7 +57,7 @@ double	BitcoinExchange::findPriceByDate(const std::string	&date)
 	std::map<std::string, double>::iterator it = m.find(date);
 	if (it != m.end())
 	{
-		std::cout << "FIND! Key => " << it->first << ", Value=> " << it->second << std::endl;
+		//std::cout << "FIND! Key => " << it->first << ", Value=> " << it->second << std::endl;
 		return it->second;
 	}
 	else
@@ -70,10 +70,11 @@ double	BitcoinExchange::findPriceByDate(const std::string	&date)
 		else
 		{
 			--it;
-			std::cout << "LOWER DAY FIND! Key => " << it->first << ", Value=> " << it->second << std::endl;
+			//std::cout << "LOWER DAY FIND! Key => " << it->first << ", Value=> " << it->second << std::endl;
 			return it->second;
 		}
 	}
-	return 1;
+	return -1;
 }
+
 

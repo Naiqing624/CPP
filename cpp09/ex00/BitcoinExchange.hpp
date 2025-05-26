@@ -37,6 +37,7 @@ class BitcoinExchange
 
 		int	loadDatabase(const std::string &filename);
 		double	findPriceByDate(const std::string &date);
+		double	getValue() const;
 };
 
 
